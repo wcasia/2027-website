@@ -1,1 +1,8 @@
-@import "tailwindcss";
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+
+
+@import "./layouts/header.css";
+@import "./layouts/footer.css";
+
+@import "./pages/home.css"
