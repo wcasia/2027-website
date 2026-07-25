@@ -13,8 +13,8 @@
     @apply bg-main-beige hover:bg-main-beige/80 text-main-navy;
   }
 
-  &.transparant{
-    @apply bg-transparant;
+  &.transparent{
+    @apply bg-transparent;
   }
 
   &.arrow{
