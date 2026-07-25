@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+
 @import "tailwindcss/theme.css";
 @import "tailwindcss/utilities.css";
 
+@theme{
+  --font-sans: "Kumbh Sans", sans-serif;
+  --font-heading: "Faculty Glyphic", sans-serif; 
+
+
+  --color-main-navy: #000073;
+  --color-main-yellow: #FCC626;
+  --color-main-beige: #F8E7D5; 
+
+  --color-accent-green: #4F8A5B;
+  --color-accent-tropical: #00513B;
+  --color-accent-maroon: #6F0E00;
+  --color-accent-slate: #8BB1C4;
+  --color-accent-teal: #15C6D6;
+  --color-accent-blue: #005ED6;
+
+  --color-neutral-900: #302F2F;
+  --color-neutral-700: #6F6E6E;
+  --color-neutral-500: #989797;
+  --color-neutral-400: #C1C1C1;
+  --color-neutral-200: #EBEBEB;
+  --color-neutral-100: #F4F1EA;
+
+  --color-text: --var(--color-neutral-900);
+  --color-heading: --var(--color-main-navy);
+}
+
+@import "./styles/typography.css";
+@import "./styles/form.css";
 
 @import "./layouts/header.css";
 @import "./layouts/footer.css";

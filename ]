@@ -1,0 +1,15 @@
+.btn{
+  @apply font-heading text-base rounded-full px-8 py-6 w-full lg:w-auto;
+
+  .primary{
+    @apply bg-main-navy text-main-beige;
+  }
+
+  .secondary{
+    @apply bg-main-yellow text-main-navy;
+  }
+
+  .beige{
+    @apply bg-main-beige text-main-navy;
+  }
+}

@@ -1,1 +1,111 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+:root, :host {
+  --color-neutral-900: #302F2F;
+  --spacing: 0.25rem;
+  --text-base: 1rem;
+  --text-base--line-height: calc(1.5 / 1);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --font-heading: "Faculty Glyphic", sans-serif;
+  --color-main-navy: #000073;
+  --color-main-yellow: #FCC626;
+  --color-main-beige: #F8E7D5;
+}
+.w-full {
+  width: 100%;
+}
+.rounded-full {
+  border-radius: calc(infinity * 1px);
+}
+.bg-main-beige {
+  background-color: var(--color-main-beige);
+}
+.bg-main-navy {
+  background-color: var(--color-main-navy);
+}
+.bg-main-yellow {
+  background-color: var(--color-main-yellow);
+}
+.px-8 {
+  padding-inline: calc(var(--spacing) * 8);
+}
+.py-6 {
+  padding-block: calc(var(--spacing) * 6);
+}
+.font-heading {
+  font-family: var(--font-heading);
+}
+.text-base {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-main-navy);
+}
+h1, .h1 {
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+  @media (width >= 64rem) {
+    font-size: 64px;
+  }
+}
+h2, .h2 {
+  font-size: 30px;
+  @media (width >= 64rem) {
+    font-size: 40px;
+  }
+}
+h3, .h3 {
+  font-size: 26px;
+  @media (width >= 64rem) {
+    font-size: 32px;
+  }
+}
+h4, .h4 {
+  font-size: 22px;
+  @media (width >= 64rem) {
+    font-size: 28px;
+  }
+}
+h5, .h5 {
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  @media (width >= 64rem) {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+}
+h6, .h6 {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  @media (width >= 64rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+}
+.btn {
+  width: 100%;
+  border-radius: calc(infinity * 1px);
+  padding-inline: calc(var(--spacing) * 8);
+  padding-block: calc(var(--spacing) * 6);
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  @media (width >= 64rem) {
+    width: auto;
+  }
+  .primary {
+    background-color: var(--color-main-navy);
+    color: var(--color-main-beige);
+  }
+  .secondary {
+    background-color: var(--color-main-yellow);
+    color: var(--color-main-navy);
+  }
+}
