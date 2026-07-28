@@ -1,34 +1,26 @@
-.btn{
-  @apply flex gap-2 items-center font-heading text-base rounded-full px-8 py-6 w-full lg:w-auto;
-
-  &.primary{
-    a.wp-element-button{
-      @apply !bg-main-navy hover:!bg-main-navy/80 !text-main-beige;
-    }
+.btn, .primary {
+  > :is(.wp-element-button, .wp-block-button__link) {
+    @apply inline-flex gap-2 items-center font-heading text-base rounded-full px-8 py-6 w-full lg:w-auto no-underline;
   }
+}
 
-  &.secondary{
-    a.wp-element-button{
-      @apply !bg-main-yellow hover:!bg-main-yellow/80 text-main-navy;
-    }
+.primary {
+  > :is(.wp-element-button, .wp-block-button__link) {
+    @apply bg-main-navy hover:bg-main-navy/80 text-main-beige;
   }
+}
 
-  &.beige{
-    a.wp-element-button{
-      @apply !bg-main-beige hover:!bg-main-beige/80 text-main-navy;
-    }
+.btn {
+  &.secondary > :is(.wp-element-button, .wp-block-button__link) {
+    @apply bg-main-yellow text-main-navy;
   }
-
-  &.transparent{
-    a.wp-element-button{
-      @apply bg-transparent;
-    }
+  &.beige > :is(.wp-element-button, .wp-block-button__link) {
+    @apply bg-main-beige hover:bg-main-beige/80 text-main-navy;
   }
-
-  &.arrow{
-    a.wp-element-button{
-      &::after{
-      content: "→";
-    }
+  &.transparent > :is(.wp-element-button, .wp-block-button__link) {
+    @apply bg-transparent;
+  }
+  &.arrow > :is(.wp-element-button, .wp-block-button__link)::after {
+    content: "→";
   }
 }
