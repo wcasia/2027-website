@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Kumbh+Sans:opsz,wght@9..144,100..900&display=swap');
 
 @import "tailwindcss/theme.css";
 @import "tailwindcss/utilities.css";
@@ -26,8 +26,8 @@
   --color-neutral-200: #EBEBEB;
   --color-neutral-100: #F4F1EA;
 
-  --color-text: --var(--color-neutral-900);
-  --color-heading: --var(--color-main-navy);
+  --color-text: var(--color-neutral-900);
+  --color-heading: var(--color-main-navy);
 }
 
 @import "./styles/typography.css";
