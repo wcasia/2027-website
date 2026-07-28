@@ -2,31 +2,31 @@
   @apply flex gap-2 items-center font-heading text-base rounded-full px-8 py-6 w-full lg:w-auto;
 
   &.primary{
-    a{
+    a.wp-element-button{
       @apply !bg-main-navy hover:!bg-main-navy/80 !text-main-beige;
     }
   }
 
   &.secondary{
-    a{
+    a.wp-element-button{
       @apply !bg-main-yellow hover:!bg-main-yellow/80 text-main-navy;
     }
   }
 
   &.beige{
-    a{
+    a.wp-element-button{
       @apply !bg-main-beige hover:!bg-main-beige/80 text-main-navy;
     }
   }
 
   &.transparent{
-    a{
+    a.wp-element-button{
       @apply bg-transparent;
     }
   }
 
   &.arrow{
-    a{
+    a.wp-element-button{
       &::after{
       content: "→";
     }
