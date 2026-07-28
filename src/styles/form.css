@@ -9,7 +9,7 @@
 
   &.secondary{
     a{
-      @apply bg-main-yellow text-main-navy;
+      @apply bg-main-yellow hover:bg-main-yellow/80 text-main-navy;
     }
   }
 
@@ -28,8 +28,7 @@
   &.arrow{
     a{
       &::after{
-        content: "→";
-      }
+      content: "→";
     }
   }
 }
