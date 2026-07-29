@@ -299,7 +299,7 @@
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Faculty Glyphic", sans-serif !important;
-  color: #000073;
+  color: #000073 !important;
 }
 h1, .h1 {
   font-size: 2.25rem !important;
@@ -347,6 +347,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem !important;
   line-height: calc(1.5 / 1) !important;
+  text-transform: none !important;
 }
 @media (width >= 64rem) {
   h6, .h6 {
