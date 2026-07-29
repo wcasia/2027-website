@@ -1,33 +1,39 @@
-.btn, .primary {
-  > :is(.wp-element-button, .wp-block-button__link) {
-    @apply inline-flex gap-2 items-center font-heading text-base rounded-full px-8 py-6 w-full lg:w-auto no-underline;
+.btn{
+  @apply w-auto inline-flex;
+
+  a{
+    @apply flex gap-2 items-center font-heading text-base rounded-full px-8 py-6 w-full md:w-auto;
+  }
+
+  &.primary{
+    a{
+      @apply !bg-main-navy hover:!bg-main-navy/80 !text-main-beige;
+    }
+  }
+
+  &.secondary{
+    a{
+      @apply !bg-main-yellow hover:!bg-main-yellow/80 text-main-navy;
+    }
+  }
+
+  &.beige{
+    a{
+      @apply !bg-main-beige hover:!bg-main-beige/80 text-main-navy;
+    }
+  }
+
+  &.transparent{
+    a{
+      @apply bg-transparent;
+    }
+  }
+
+  &.arrow{
+    a{
+      &::after{
+      content: "→";
+    }
   }
 }
-
-.primary > :is(.wp-element-button, .wp-block-button__link) {
-  @apply bg-main-navy text-main-beige;
-}
-
-.primary > :is(.wp-element-button, .wp-block-button__link):hover {
-  @apply bg-main-navy/80;
-}
-
-.btn.secondary > :is(.wp-element-button, .wp-block-button__link) {
-  @apply bg-main-yellow text-main-navy;
-}
-
-.btn.beige > :is(.wp-element-button, .wp-block-button__link) {
-  @apply bg-main-beige text-main-navy;
-}
-
-.btn.beige > :is(.wp-element-button, .wp-block-button__link):hover {
-  @apply bg-main-beige/80;
-}
-
-.btn.transparent > :is(.wp-element-button, .wp-block-button__link) {
-  @apply bg-transparent;
-}
-
-.btn.arrow > :is(.wp-element-button, .wp-block-button__link)::after {
-  content: "→";
 }

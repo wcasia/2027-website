@@ -193,49 +193,76 @@ h6, .h6 {
     line-height: var(--tw-leading, var(--text-xl--line-height)) !important;
   }
 }
-:is(.btn, .primary) > :is(.wp-element-button, .wp-block-button__link) {
+.btn {
   display: inline-flex;
-  width: 100%;
-  align-items: center;
-  gap: calc(var(--spacing) * 2);
-  border-radius: calc(infinity * 1px);
-  padding-inline: calc(var(--spacing) * 8);
-  padding-block: calc(var(--spacing) * 6);
-  font-family: var(--font-heading);
-  font-size: var(--text-base);
-  line-height: var(--tw-leading, var(--text-base--line-height));
-  text-decoration-line: none;
-  @media (width >= 64rem) {
-    width: auto;
+  width: auto;
+  a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: calc(var(--spacing) * 2);
+    border-radius: calc(infinity * 1px);
+    padding-inline: calc(var(--spacing) * 8);
+    padding-block: calc(var(--spacing) * 6);
+    font-family: var(--font-heading);
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+    @media (width >= 48rem) {
+      width: auto;
+    }
   }
-}
-.primary > :is(.wp-element-button, .wp-block-button__link) {
-  background-color: var(--color-main-navy);
-  color: var(--color-main-beige);
-}
-.primary > :is(.wp-element-button, .wp-block-button__link):hover {
-  background-color: color-mix(in srgb, #000073 80%, transparent);
-  @supports (color: color-mix(in lab, red, red)) {
-    background-color: color-mix(in oklab, var(--color-main-navy) 80%, transparent);
+  &.primary {
+    a {
+      background-color: var(--color-main-navy) !important;
+      color: var(--color-main-beige) !important;
+      &:hover {
+        @media (hover: hover) {
+          background-color: color-mix(in srgb, #000073 80%, transparent) !important;
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-main-navy) 80%, transparent) !important;
+          }
+        }
+      }
+    }
   }
-}
-.btn.secondary > :is(.wp-element-button, .wp-block-button__link) {
-  background-color: var(--color-main-yellow);
-  color: var(--color-main-navy);
-}
-.btn.beige > :is(.wp-element-button, .wp-block-button__link) {
-  background-color: var(--color-main-beige);
-  color: var(--color-main-navy);
-}
-.btn.beige > :is(.wp-element-button, .wp-block-button__link):hover {
-  background-color: color-mix(in srgb, #F8E7D5 80%, transparent);
-  @supports (color: color-mix(in lab, red, red)) {
-    background-color: color-mix(in oklab, var(--color-main-beige) 80%, transparent);
+  &.secondary {
+    a {
+      background-color: var(--color-main-yellow) !important;
+      color: var(--color-main-navy);
+      &:hover {
+        @media (hover: hover) {
+          background-color: color-mix(in srgb, #FCC626 80%, transparent) !important;
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-main-yellow) 80%, transparent) !important;
+          }
+        }
+      }
+    }
   }
-}
-.btn.transparent > :is(.wp-element-button, .wp-block-button__link) {
-  background-color: transparent;
-}
-.btn.arrow > :is(.wp-element-button, .wp-block-button__link)::after {
-  content: "→";
+  &.beige {
+    a {
+      background-color: var(--color-main-beige) !important;
+      color: var(--color-main-navy);
+      &:hover {
+        @media (hover: hover) {
+          background-color: color-mix(in srgb, #F8E7D5 80%, transparent) !important;
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-main-beige) 80%, transparent) !important;
+          }
+        }
+      }
+    }
+  }
+  &.transparent {
+    a {
+      background-color: transparent;
+    }
+  }
+  &.arrow {
+    a {
+      &::after {
+        content: "→";
+      }
+    }
+  }
 }
