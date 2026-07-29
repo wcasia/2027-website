@@ -207,6 +207,7 @@ h6, .h6 {
     font-family: var(--font-heading);
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
+    text-decoration-line: none;
     @media (width >= 48rem) {
       width: auto;
     }
