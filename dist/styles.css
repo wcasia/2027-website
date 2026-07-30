@@ -405,7 +405,13 @@ h6, .h6 {
   }
 }
 .btn.transparent a {
-  background-color: transparent;
+  background-color: transparent !important;
+  color: #000073;
+}
+@media (hover: hover) {
+  :is(.btn.transparent a):hover {
+    background-color: color-mix(in oklab, #F4F1EA 80%, transparent);
+  }
 }
 :is(.btn.arrow a)::after {
   content: "→";
