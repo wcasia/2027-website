@@ -29,11 +29,7 @@
     }
   }
 
-  &.arrow{
-    a{
-      &::after{
-        content: '';
-      }
-    }
+  &.arrow a{
+    @apply after:content-[''];
   }
 }
