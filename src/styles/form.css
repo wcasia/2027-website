@@ -32,7 +32,7 @@
   &.arrow{
     a{
       &::after{
-        content: "→";
+        content: '';
       }
     }
   }
