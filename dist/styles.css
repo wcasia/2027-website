@@ -1,6 +1,5 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Kumbh+Sans:opsz,wght@9..144,100..900&display=swap');
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -415,19 +414,5 @@ h6, .h6 {
   }
 }
 :is(.btn.arrow a)::after {
-  content: var(--tw-content);
-  --tw-content: '';
-  content: var(--tw-content);
-}
-@property --tw-content {
-  syntax: "*";
-  initial-value: "";
-  inherits: false;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-content: "";
-    }
-  }
+  content: "";
 }
