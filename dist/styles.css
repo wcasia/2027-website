@@ -404,13 +404,13 @@ h6, .h6 {
     background-color: color-mix(in oklab, #F8E7D5 80%, transparent) !important;
   }
 }
-.btn.transparent a {
+.btn.clear a {
   background-color: transparent !important;
   color: #000073;
 }
 @media (hover: hover) {
-  :is(.btn.transparent a):hover {
-    background-color: color-mix(in oklab, #F4F1EA 80%, transparent);
+  :is(.btn.clear a):hover {
+    text-decoration-line: underline;
   }
 }
 :is(.btn.arrow a)::after {

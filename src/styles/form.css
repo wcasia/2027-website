@@ -23,9 +23,9 @@
     }
   }
 
-  &.transparent{
+  &.clear{
     a{
-      @apply !bg-transparent hover:bg-neutral-100/80 text-main-navy;
+      @apply !bg-transparent hover:underline text-main-navy;
     }
   }
 
