@@ -303,19 +303,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Faculty Glyphic", sans-serif;
   color: #000073;
 }
-h1, .h1 {
+h1, .h1, .page-title {
   font-size: 2.25rem;
   line-height: calc(2.5 / 2.25);
   --tw-leading: 40px;
   line-height: 40px;
 }
 @media (min-width: 64rem) {
-  h1, .h1 {
+  h1, .h1, .page-title {
     font-size: 64px;
   }
 }
 @media (min-width: 64rem) {
-  h1, .h1 {
+  h1, .h1, .page-title {
     --tw-leading: 76px;
     line-height: 76px;
   }
@@ -435,6 +435,19 @@ p.lead {
     --tw-leading: 28px;
     line-height: 28px;
   }
+}
+.page-hero-title {
+  padding-top: 173px;
+}
+.page-hero-title .tiles {
+  min-height: clamp(35px, 2.1875vw + 28px, 70px);
+  margin-top: 100px;
+}
+.page-hero-title .deco-left {
+  position: absolute;
+  top: calc(0.25rem * 4);
+  left: 0px;
+  max-width: 170px;
 }
 .btn {
   display: inline-flex;

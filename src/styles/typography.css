@@ -1,7 +1,7 @@
 h1, h2, h3, h4, h5, h6{
   @apply font-heading text-main-navy;
 }
-h1, .h1{
+h1, .h1, .page-title{
   @apply text-4xl lg:text-[64px] leading-[40px] lg:leading-[76px];
 
 }
@@ -34,3 +34,15 @@ p{
   }
 }
 
+.page-hero-title{
+  @apply pt-[173px];
+
+  .tiles{
+    min-height: clamp(35px, 2.1875vw + 28px, 70px);
+    @apply mt-[100px];
+  }
+
+  .deco-left{
+    @apply absolute top-4 left-0 max-w-[170px];
+  }
+}
