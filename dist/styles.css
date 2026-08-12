@@ -410,6 +410,24 @@ p {
   --tw-leading: 24px;
   line-height: 24px;
 }
+p .lead {
+  font-size: 1.25rem;
+  line-height: calc(1.75 / 1.25);
+  --tw-leading: 24px;
+  line-height: 24px;
+}
+@media (width >= 64rem) {
+  p .lead {
+    font-size: 1.5rem;
+    line-height: calc(2 / 1.5);
+  }
+}
+@media (width >= 64rem) {
+  p .lead {
+    --tw-leading: 28px;
+    line-height: 28px;
+  }
+}
 .btn {
   display: inline-flex;
   width: auto;
