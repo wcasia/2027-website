@@ -411,7 +411,7 @@ p {
   line-height: 24px;
 }
 p .lead {
-  margin-block: calc(0.25rem * 4);
+  margin-block: calc(0.25rem * 4) !important;
   font-size: 1.25rem;
   line-height: calc(1.75 / 1.25);
   --tw-leading: 24px;
