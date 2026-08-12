@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6{
-  @apply !font-heading text-main-navy;
+  @apply font-heading text-main-navy;
 }
 h1, .h1{
   @apply text-4xl lg:text-[64px] leading-[40px] lg:leading-[76px];
@@ -28,4 +28,9 @@ h6, .h6{
 
 p{
   @apply text-base leading-[24px];
+
+  .lead{
+    @apply text-xl lg:text-2xl leadin-[24px] lg:leading-[28px];
+  }
 }
+
