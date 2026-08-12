@@ -1,27 +1,31 @@
 h1, h2, h3, h4, h5, h6{
-  @apply !font-heading !text-main-navy;
+  @apply !font-heading text-main-navy;
 }
 h1, .h1{
-  @apply text-4xl lg:text-[64px];
+  @apply text-4xl lg:text-[64px] leading-[40px] lg:leading-[76px];
 
 }
 
 h2, .h2{
-  @apply text-[30px] lg:text-[40px];
+  @apply text-[30px] lg:text-[40px] leading-[36px] lg:leading-[48px];
 }
 
 h3, .h3{
-  @apply text-[26px] lg:text-[32px];
+  @apply text-[26px] lg:text-[32px] leading-[32px] lg:leading-[40px];
 }
 
 h4, .h4{
- @apply text-[22px] lg:text-[28px];
+ @apply text-[22px] lg:text-[28px] leading-[24px] lg:leading-[32px];
 }
 
 h5, .h5{
-  @apply text-xl lg:text-2xl;
+  @apply text-xl lg:text-2xl leading-[24px] lg:leading-[28px];
 }
 
 h6, .h6{
-  @apply text-base lg:text-xl normal-case;
+  @apply text-base lg:text-xl normal-case leading-[20px] lg:leading-[24px];
+}
+
+p{
+  @apply text-base leading-[24px];
 }

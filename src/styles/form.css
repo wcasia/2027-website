@@ -7,15 +7,10 @@
 
   &.primary{
     a{
-      @apply !bg-main-navy hover:!bg-main-navy/80 !text-main-beige;
+      @apply !bg-main-navy hover:!bg-main-yellow !text-main-beige hover:!text-main-navy;
     }
   }
 
-  &.secondary{
-    a{
-      @apply !bg-main-yellow hover:!bg-main-yellow/80 text-main-navy;
-    }
-  }
 
   &.beige{
     a{
@@ -25,7 +20,7 @@
 
   &.clear{
     a{
-      @apply !bg-transparent hover:underline text-main-navy;
+      @apply !bg-transparent hover:!bg-main-beige text-main-navy;
     }
   }
 
