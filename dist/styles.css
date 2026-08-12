@@ -9,6 +9,7 @@
     --spacing: 0.25rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
+    --container-5xl: 64rem;
     --container-7xl: 80rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
@@ -420,7 +421,7 @@ p.lead {
 }
 @media (min-width: 64rem) {
   p.lead {
-    max-width: 810px;
+    width: 64rem;
   }
 }
 @media (min-width: 64rem) {
