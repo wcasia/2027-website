@@ -29,7 +29,7 @@ h6, .h6{
 p{
   @apply text-base leading-[24px];
 
-  .lead{
+  &.lead{
     @apply text-xl lg:text-2xl leading-[24px] lg:leading-[28px] !my-4;
   }
 }
