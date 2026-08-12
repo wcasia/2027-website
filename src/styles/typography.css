@@ -30,7 +30,7 @@ p{
   @apply text-base leading-[24px];
 
   &.lead{
-    @apply text-xl lg:text-2xl leading-[24px] lg:leading-[28px] !my-4;
+    @apply text-xl lg:text-2xl leading-[24px] lg:leading-[28px] !my-4 w-full lg:max-w-[810px];
   }
 }
 
