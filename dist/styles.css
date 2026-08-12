@@ -292,7 +292,7 @@
       color: #FCC626;
     }
   }
-  @media (width >= 64rem) {
+  @media (min-width: 64rem) {
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -308,12 +308,12 @@ h1, .h1 {
   --tw-leading: 40px;
   line-height: 40px;
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h1, .h1 {
     font-size: 64px;
   }
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h1, .h1 {
     --tw-leading: 76px;
     line-height: 76px;
@@ -324,12 +324,12 @@ h2, .h2 {
   --tw-leading: 36px;
   line-height: 36px;
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h2, .h2 {
     font-size: 40px;
   }
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h2, .h2 {
     --tw-leading: 48px;
     line-height: 48px;
@@ -340,12 +340,12 @@ h3, .h3 {
   --tw-leading: 32px;
   line-height: 32px;
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h3, .h3 {
     font-size: 32px;
   }
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h3, .h3 {
     --tw-leading: 40px;
     line-height: 40px;
@@ -356,12 +356,12 @@ h4, .h4 {
   --tw-leading: 24px;
   line-height: 24px;
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h4, .h4 {
     font-size: 28px;
   }
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h4, .h4 {
     --tw-leading: 32px;
     line-height: 32px;
@@ -373,13 +373,13 @@ h5, .h5 {
   --tw-leading: 24px;
   line-height: 24px;
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h5, .h5 {
     font-size: 1.5rem;
     line-height: calc(2 / 1.5);
   }
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h5, .h5 {
     --tw-leading: 28px;
     line-height: 28px;
@@ -392,13 +392,13 @@ h6, .h6 {
   line-height: 20px;
   text-transform: none;
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h6, .h6 {
     font-size: 1.25rem;
     line-height: calc(1.75 / 1.25);
   }
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   h6, .h6 {
     --tw-leading: 24px;
     line-height: 24px;
@@ -418,18 +418,18 @@ p.lead {
   --tw-leading: 24px;
   line-height: 24px;
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   p.lead {
     max-width: 810px;
   }
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   p.lead {
     font-size: 1.5rem;
     line-height: calc(2 / 1.5);
   }
 }
-@media (width >= 64rem) {
+@media (min-width: 64rem) {
   p.lead {
     --tw-leading: 28px;
     line-height: 28px;
@@ -452,7 +452,7 @@ p.lead {
   line-height: calc(1.5 / 1);
   text-decoration-line: none;
 }
-@media (width >= 48rem) {
+@media (min-width: 48rem) {
   .btn a {
     width: auto;
   }
