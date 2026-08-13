@@ -35,17 +35,17 @@ p{
 }
 
 .page-hero-title{
-  @apply !pt-[173px];
+  @apply !pt-[120px] lg:!pt-[168px];
 
   .tiles{
-    @apply mt-[100px] h-[35px] lg:h-[70px];
+    @apply !mt-[100px] h-[35px] lg:h-[70px];
   }
 
   .deco-left{
-    @apply absolute top-0 lg:top-4 left-0;
+    @apply absolute -top-2 lg:top-4 left-0 w-[73px] lg:w-[150px];
   }
   
   .deco-right{
-    @apply absolute right-[60px] bottom-[70px] w-[224px];
+    @apply absolute right-[31px] lg:right-[60px] bottom-[35px] lg:bottom-[70px] w-[112px] lg:w-[224px];
   }
 }
