@@ -437,7 +437,7 @@ p.lead {
   }
 }
 .page-hero-title {
-  padding-top: 173px;
+  padding-top: 173px !important;
 }
 .page-hero-title .tiles {
   margin-top: 100px;
@@ -450,9 +450,19 @@ p.lead {
 }
 .page-hero-title .deco-left {
   position: absolute;
-  top: calc(0.25rem * 4);
+  top: 0px;
   left: 0px;
-  max-width: 170px;
+}
+@media (min-width: 64rem) {
+  .page-hero-title .deco-left {
+    top: calc(0.25rem * 4);
+  }
+}
+.page-hero-title .deco-right {
+  position: absolute;
+  right: 60px;
+  bottom: 70px;
+  width: 224px;
 }
 .btn {
   display: inline-flex;

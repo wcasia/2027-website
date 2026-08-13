@@ -35,13 +35,17 @@ p{
 }
 
 .page-hero-title{
-  @apply pt-[173px];
+  @apply !pt-[173px];
 
   .tiles{
     @apply mt-[100px] h-[35px] lg:h-[70px];
   }
 
   .deco-left{
-    @apply absolute top-4 left-0 max-w-[170px];
+    @apply absolute top-0 lg:top-4 left-0;
+  }
+  
+  .deco-right{
+    @apply absolute right-[60px] bottom-[70px] w-[224px];
   }
 }
