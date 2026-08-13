@@ -455,7 +455,7 @@ p.lead {
 }
 .page-hero-title .deco-left {
   position: absolute;
-  top: calc(0.25rem * -2);
+  top: -55px;
   left: 0px;
   width: 73px;
 }
@@ -471,7 +471,7 @@ p.lead {
 }
 .page-hero-title .deco-right {
   position: absolute;
-  right: 31px;
+  right: -40px;
   bottom: 35px;
   width: 112px;
 }

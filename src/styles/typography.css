@@ -42,10 +42,10 @@ p{
   }
 
   .deco-left{
-    @apply absolute -top-2 lg:top-4 left-0 w-[73px] lg:w-[150px];
+    @apply absolute top-[-55px] lg:top-4 left-0 w-[73px] lg:w-[150px];
   }
   
   .deco-right{
-    @apply absolute right-[31px] lg:right-[60px] bottom-[35px] lg:bottom-[70px] w-[112px] lg:w-[224px];
+    @apply absolute right-[-40px] lg:right-[60px] bottom-[35px] lg:bottom-[70px] w-[112px] lg:w-[224px];
   }
 }
