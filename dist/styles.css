@@ -440,7 +440,6 @@ p.lead {
   padding-top: 173px;
 }
 .page-hero-title .tiles {
-  min-height: clamp(35px, 2.1875vw + 28px, 70px);
   margin-top: 100px;
   height: 35px;
 }
