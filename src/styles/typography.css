@@ -35,7 +35,7 @@ p{
 }
 
 .page-hero-title{
-  @apply !pt-[120px] lg:!pt-[168px];
+  @apply !pt-[120px] lg:!pt-[168px] overflow-hidden;
 
   .tiles{
     @apply !mt-[100px] h-[35px] lg:h-[70px];

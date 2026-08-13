@@ -437,6 +437,7 @@ p.lead {
   }
 }
 .page-hero-title {
+  overflow: hidden;
   padding-top: 120px !important;
 }
 @media (min-width: 64rem) {
