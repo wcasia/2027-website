@@ -62,10 +62,6 @@ p.lead {
 	width: 100%;
 	max-width: 80ch;
 }
-.page-hero-title {
-	padding-top: 120px;
-	overflow: hidden;
-}
 
 /* Buttons */
 .btn {
@@ -107,14 +103,22 @@ p.lead {
 	margin-left: 8px;
 }
 
+.page-hero-title {
+	padding-top: 120px;
+	overflow: hidden;
+	position: relative;
+}
+
 .page-hero-title .tiles {
 	height: 70px;
 }
 .page-hero-title .deco-left {
+	position: absolute;
 	top: 1rem;
 	width: 150px;
 }
 .page-hero-title .deco-right {
+	position: absolute;
 	right: 60px;
 	bottom: 70px;
 	width: 224px;
