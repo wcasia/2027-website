@@ -15,55 +15,30 @@ h1,
 .h1 {
 	font-size: 36px;
 	line-height: 40px;
-
-	@media (min-width >= 1024px) {
-		font-size: 64px;
-		line-height: 76px;
-	}
 }
 
 h2,
 .h2 {
 	font-size: 30px;
 	line-height: 36px;
-
-	@media (min-width >= 1024px) {
-		font-size: 40px;
-		line-height: 48px;
-	}
 }
 
 h3,
 .h3 {
 	font-size: 26px;
 	line-height: 32px;
-
-	@media (min-width >= 1024px) {
-		font-size: 32px;
-		line-height: 40px;
-	}
 }
 
 h4,
 .h4 {
 	font-size: 22px;
 	line-height: 24px;
-
-	@media (min-width >= 1024px) {
-		font-size: 28px;
-		line-height: 32px;
-	}
 }
 
 h5,
 .h5 {
 	font-size: 20px;
 	line-height: 24px;
-
-	@media (min-width >= 1024px) {
-		font-size: 24px; /* text-2xl */
-		line-height: 28px;
-	}
 }
 
 h6,
@@ -71,118 +46,115 @@ h6,
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: none;
-
-	@media (min-width >= 1024px) {
-		font-size: 20px;
-		line-height: 24px;
-	}
 }
 
 p {
 	font-size: 16px;
 	line-height: 24px;
+}
 
-	&.lead {
-		font-size: 20px;
-		line-height: 24px;
-		margin: 1rem 0;
-		width: 100%;
-
-		@media (min-width >= 1024px) {
-			font-size: 24px;
-			line-height: 28px;
-			max-width: 80ch;
-		}
-	}
+p.lead {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 1rem 0;
+	width: 100%;
 }
 
 .page-hero-title {
 	padding-top: 120px;
 	overflow: hidden;
-
-	@media (min-width >= 1024px) {
-		padding-top: 168px;
-	}
-
-	.tiles {
-		margin-top: 100px;
-		height: 35px;
-
-		@media (min-width >= 1024px) {
-			height: 70px;
-		}
-	}
-
-	.deco-left {
-		position: absolute;
-		top: -55px;
-		left: 0;
-		width: 73px;
-
-		@media (min-width >= 1024px) {
-			top: 1rem;
-			width: 150px;
-		}
-	}
-
-	.deco-right {
-		position: absolute;
-		right: -40px;
-		bottom: 35px;
-		width: 112px;
-
-		@media (min-width >= 1024px) {
-			right: 60px;
-			bottom: 70px;
-			width: 224px;
-		}
-	}
 }
 
 /* Buttons */
 .btn {
 	display: inline-flex;
 	width: auto;
+}
 
-	a {
-		display: flex;
-		gap: 8px;
-		align-items: center;
-		font-family: "Faculty Glyphic", sans-serif;
-		font-size: 16px;
-		border-radius: 9999px;
-		padding: 24px 32px;
-		width: 100%;
-		text-decoration: none;
+.btn a {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	font-family: "Faculty Glyphic", sans-serif;
+	font-size: 16px;
+	border-radius: 9999px;
+	padding: 24px 32px;
+	width: 100%;
+	text-decoration: none;
+}
+
+.btn.primary a {
+	background-color: #000073;
+	color: #f8e7d5;
+}
+.btn.primary a:hover {
+	background-color: #fcc626;
+	color: #000073;
+}
+
+.btn.clear a {
+	background-color: transparent;
+	color: #000073;
+}
+.btn.clear a:hover {
+	background-color: #f8e7d5;
+}
+
+.btn.arrow a::after {
+	content: "→";
+	margin-left: 8px;
+}
+
+/* Grouped responsive rules */
+@media (min-width >= 1024px) {
+	h1,
+	.h1 {
+		font-size: 64px;
+		line-height: 76px;
 	}
-
-	&.primary {
-			a {
-				background-color: #000073;
-				color: #f8e7d5;
-
-				&:hover {
-					background-color: #fcc626;
-					color: #000073;
-				}
-			}
+	h2,
+	.h2 {
+		font-size: 40px;
+		line-height: 48px;
 	}
-
-	&.clear {
-			a {
-				background-color: transparent;
-				color: #000073;
-
-				&:hover {
-					background-color: #f8e7d5;
-				}
-			}
+	h3,
+	.h3 {
+		font-size: 32px;
+		line-height: 40px;
 	}
-
-	&.arrow {
-		a::after {
-			content: "→";
-			margin-left: 8px;
-		}
+	h4,
+	.h4 {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	h5,
+	.h5 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	h6,
+	.h6 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	p.lead {
+		font-size: 24px;
+		line-height: 28px;
+		max-width: 80ch;
+	}
+	.page-hero-title {
+		padding-top: 168px;
+	}
+	.page-hero-title .tiles {
+		height: 70px;
+	}
+	.page-hero-title .deco-left {
+		top: 1rem;
+		width: 150px;
+	}
+	.page-hero-title .deco-right {
+		right: 60px;
+		bottom: 70px;
+		width: 224px;
 	}
 }
