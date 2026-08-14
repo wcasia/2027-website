@@ -115,6 +115,7 @@ p.lead {
 .page-hero-title .deco-left {
 	position: absolute;
 	top: 1rem;
+	left: 0;
 	width: 150px;
 }
 .page-hero-title .deco-right {
