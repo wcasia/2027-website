@@ -1,68 +1,5 @@
 /* Variables inlined for remoteCSS compatibility */
 
-/* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Faculty Glyphic", sans-serif;
-	color: #000073;
-}
-
-/* Desktop (base) sizes */
-h1,
-.h1 {
-	font-size: 64px;
-	line-height: 76px;
-}
-h2,
-.h2 {
-	font-size: 40px;
-	line-height: 48px;
-}
-h3,
-.h3 {
-	font-size: 32px;
-	line-height: 40px;
-}
-h4,
-.h4 {
-	font-size: 28px;
-	line-height: 32px;
-}
-h5,
-.h5 {
-	font-size: 24px;
-	line-height: 28px;
-}
-h6,
-.h6 {
-	font-size: 20px;
-	line-height: 24px;
-	text-transform: none;
-}
-
-p {
-	font-size: 16px;
-	line-height: 24px;
-}
-
-/* Paragraphs */
-p {
-	font-size: 16px;
-	line-height: 24px;
-}
-
-p.lead {
-	font-size: 24px;
-	line-height: 28px;
-	margin: 1rem 0;
-	width: 100%;
-	max-width: 80ch;
-}
-
 /* Buttons */
 .btn {
 	display: inline-flex;
@@ -126,87 +63,51 @@ p.lead {
 }*/
 
 .page-hero-title {
-    position: relative;
+	position: relative;
 	overflow: hidden;
-    z-index: 1;
+	z-index: 1;
 }
 
 .page-hero-title:before,
 .page-hero-title:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    z-index: -1;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
 }
 
 .page-hero-title:before {
-    top: 40px;
-    left: 0;
-    background-image: url(https://asia.wordcamp.org/2027/files/2026/08/left-bg-leaf.png);
-    background-position: top left;
-    background-size: clamp(80px, 15vw, 170px);
+	top: 40px;
+	left: 0;
+	background-image: url(https://asia.wordcamp.org/2027/files/2026/08/left-bg-leaf.png);
+	background-position: top left;
+	background-size: clamp(80px, 15vw, 170px);
 }
 
 .page-hero-title:after {
-    right: 25px;
-    bottom: -60px;
-    background-image: url(https://asia.wordcamp.org/2027/files/2026/08/right-bg-leaf.png);
-    background-position: bottom right;
-    background-size: clamp(100px, 20vw, 220px);
+	right: 25px;
+	bottom: -60px;
+	background-image: url(https://asia.wordcamp.org/2027/files/2026/08/right-bg-leaf.png);
+	background-position: bottom right;
+	background-size: clamp(100px, 20vw, 220px);
 }
 
 @media (max-width: 600px) {
-    .page-hero-title:before {
-        top: -40px;
-        left: -10px;
-    }
+	.page-hero-title:before {
+		top: -40px;
+		left: -10px;
+	}
 
-    .page-hero-title:after {
-        right: -40px;
-        bottom: -30px
-    }
+	.page-hero-title:after {
+		right: -40px;
+		bottom: -30px;
+	}
 }
 
 /* Mobile / smaller screens overrides */
 @media (max-width: 1023px) {
-	h1,
-	.h1 {
-		font-size: 36px;
-		line-height: 40px;
-	}
-	h2,
-	.h2 {
-		font-size: 30px;
-		line-height: 36px;
-	}
-	h3,
-	.h3 {
-		font-size: 26px;
-		line-height: 32px;
-	}
-	h4,
-	.h4 {
-		font-size: 22px;
-		line-height: 24px;
-	}
-	h5,
-	.h5 {
-		font-size: 20px;
-		line-height: 24px;
-	}
-	h6,
-	.h6 {
-		font-size: 16px;
-		line-height: 20px;
-	}
-	p.lead {
-		font-size: 20px;
-		line-height: 24px;
-		max-width: none;
-	}
-	
 	/*.page-hero-title {
 		padding-top: 120px;
 	}
