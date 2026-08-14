@@ -11,40 +11,36 @@ h6 {
 	color: #000073;
 }
 
+/* Desktop (base) sizes */
 h1,
 .h1 {
-	font-size: 36px;
-	line-height: 40px;
+	font-size: 64px;
+	line-height: 76px;
 }
-
 h2,
 .h2 {
-	font-size: 30px;
-	line-height: 36px;
+	font-size: 40px;
+	line-height: 48px;
 }
-
 h3,
 .h3 {
-	font-size: 26px;
-	line-height: 32px;
+	font-size: 32px;
+	line-height: 40px;
 }
-
 h4,
 .h4 {
-	font-size: 22px;
-	line-height: 24px;
+	font-size: 28px;
+	line-height: 32px;
 }
-
 h5,
 .h5 {
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 24px;
+	line-height: 28px;
 }
-
 h6,
 .h6 {
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 20px;
+	line-height: 24px;
 	text-transform: none;
 }
 
@@ -53,13 +49,19 @@ p {
 	line-height: 24px;
 }
 
-p.lead {
-	font-size: 20px;
+/* Paragraphs */
+p {
+	font-size: 16px;
 	line-height: 24px;
-	margin: 1rem 0;
-	width: 100%;
 }
 
+p.lead {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 1rem 0;
+	width: 100%;
+	max-width: 80ch;
+}
 .page-hero-title {
 	padding-top: 120px;
 	overflow: hidden;
@@ -105,56 +107,70 @@ p.lead {
 	margin-left: 8px;
 }
 
-/* Grouped responsive rules */
-@media screen and (min-width: 1024) {
+.page-hero-title .tiles {
+	height: 70px;
+}
+.page-hero-title .deco-left {
+	top: 1rem;
+	width: 150px;
+}
+.page-hero-title .deco-right {
+	right: 60px;
+	bottom: 70px;
+	width: 224px;
+}
+
+/* Mobile / smaller screens overrides */
+@media (max-width: 1023px) {
 	h1,
 	.h1 {
-		font-size: 64px;
-		line-height: 76px;
+		font-size: 36px;
+		line-height: 40px;
 	}
 	h2,
 	.h2 {
-		font-size: 40px;
-		line-height: 48px;
+		font-size: 30px;
+		line-height: 36px;
 	}
 	h3,
 	.h3 {
-		font-size: 32px;
-		line-height: 40px;
+		font-size: 26px;
+		line-height: 32px;
 	}
 	h4,
 	.h4 {
-		font-size: 28px;
-		line-height: 32px;
+		font-size: 22px;
+		line-height: 24px;
 	}
 	h5,
 	.h5 {
-		font-size: 24px;
-		line-height: 28px;
-	}
-	h6,
-	.h6 {
 		font-size: 20px;
 		line-height: 24px;
 	}
+	h6,
+	.h6 {
+		font-size: 16px;
+		line-height: 20px;
+	}
 	p.lead {
-		font-size: 24px;
-		line-height: 28px;
-		max-width: 80ch;
+		font-size: 20px;
+		line-height: 24px;
+		max-width: none;
 	}
 	.page-hero-title {
-		padding-top: 168px;
+		padding-top: 120px;
 	}
+
 	.page-hero-title .tiles {
-		height: 70px;
+		height: 35px;
 	}
 	.page-hero-title .deco-left {
-		top: 1rem;
-		width: 150px;
+		top: -55px;
+		width: 73px;
 	}
 	.page-hero-title .deco-right {
-		right: 60px;
-		bottom: 70px;
-		width: 224px;
+		right: -40px;
+		bottom: 35px;
+		width: 112px;
 	}
 }
